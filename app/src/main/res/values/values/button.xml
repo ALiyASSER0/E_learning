@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <array name="icons">
+        <item>@drawable/newchat</item>
+        <item>@drawable/attt</item>
+        <item>@drawable/qe</item>
+        <item>@drawable/grades</item>
+        <item>@drawable/add</item>
+
+    </array>
+    <array name="colors">
+        <item>@android:color/holo_blue_light</item>
+        <item>@android:color/holo_blue_light</item>
+        <item>@android:color/holo_blue_light</item>
+        <item>@android:color/holo_blue_light</item>
+        <item>@android:color/holo_blue_light</item>
+    </array>
+</resources>

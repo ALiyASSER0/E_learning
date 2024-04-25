@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:gravity="center"
+    android:background="@color/whiteBodyColor"
+    >
+    <TextView
+     android:id="@+id/solveQuestion"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.5"
+        android:textSize="18sp"
+        android:gravity="center"
+        android:text="Solve Question"
+        android:fontFamily="@font/cairo_bold"
+        android:layout_marginHorizontal="@dimen/_20sdp"
+        android:layout_marginTop="@dimen/_20sdp"
+        android:padding="@dimen/_10sdp"
+        android:textColor="#000"
+        android:drawableRight="@drawable/qusetionmarks"
+        android:background="@drawable/button_back_ground_whit"
+app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginRight="5dp"
+app:layout_constraintHeight_percent="0.15"
+        app:cardCornerRadius="15dp"
+      android:layout_marginTop="@dimen/_20sdp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/solveQuestion"
+        app:layout_constraintWidth_percent="0.90">
+
+        <TextView
+            android:id="@+id/question_content_in_solve_quze"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/button_back_ground_black"
+            android:fontFamily="@font/cairo_bold"
+            android:gravity="center"
+            android:text="The Question "
+            android:textColor="#000"
+            android:textSize="13sp"
+
+            />
+
+    </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+             android:id="@+id/card1"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                app:layout_constraintWidth_percent="0.43"
+                app:layout_constraintHeight_percent="0.20"
+                android:layout_marginTop="@dimen/_20sdp"
+                app:cardCornerRadius="15dp"
+app:layout_constraintStart_toStartOf="@+id/card"
+                app:layout_constraintTop_toBottomOf="@+id/card"
+                >
+
+                <TextView
+                    android:id="@+id/choose_one__in_solve_quze"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:fontFamily="@font/cairo_semibold"
+                    android:gravity="center"
+                    android:text="answer 1"
+                    android:textColor="#000"
+                    android:textSize="13sp"
+
+                    />
+
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView
+               android:id="@+id/card2"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                app:layout_constraintWidth_percent="0.43"
+                app:layout_constraintHeight_percent="0.20"
+                android:layout_marginTop="@dimen/_20sdp"
+                app:cardCornerRadius="15dp"
+
+              app:layout_constraintEnd_toEndOf="@+id/card"
+                app:layout_constraintTop_toBottomOf="@+id/card"
+                >
+                <TextView
+                    android:id="@+id/choose_two__in_solve_quze"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:textSize="13sp"
+                    android:fontFamily="@font/cairo_semibold"
+                    android:text="answer 2"
+                    android:gravity="center"
+                    android:textColor="#000"
+                    />
+
+            </androidx.cardview.widget.CardView>
+
+
+            <androidx.cardview.widget.CardView
+               android:id="@+id/card3"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                app:layout_constraintWidth_percent="0.43"
+                app:layout_constraintHeight_percent="0.20"
+                android:layout_marginTop="@dimen/_15sdp"
+                app:cardCornerRadius="15dp"
+
+                app:layout_constraintStart_toStartOf="@+id/card1"
+                app:layout_constraintTop_toBottomOf="@+id/card1"
+                >
+                <TextView
+                    android:id="@+id/choose_three__in_solve_quze"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:textSize="13sp"
+                    android:fontFamily="@font/cairo_semibold"
+                    android:text="answer 3"
+                    android:gravity="center"
+                    android:textColor="#000"
+                    />
+
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView
+               android:id="@+id/card4"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                app:layout_constraintWidth_percent="0.43"
+                app:layout_constraintHeight_percent="0.20"
+                android:layout_marginTop="@dimen/_15sdp"
+                app:cardCornerRadius="15dp"
+                app:layout_constraintEnd_toEndOf="@+id/card2"
+                app:layout_constraintTop_toBottomOf="@+id/card2"
+                >
+                <TextView
+                    android:id="@+id/choose_foure__in_solve_quze"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:textSize="13sp"
+                    android:fontFamily="@font/cairo_semibold"
+                    android:text="answer 4"
+                    android:gravity="center"
+                    android:textColor="#000"
+                    />
+
+            </androidx.cardview.widget.CardView>
+
+
+        <TextView
+            android:id="@+id/button_conferm_to_solve_next_question"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:background="@drawable/button_background_blue"
+      app:layout_constraintWidth_percent="0.90"
+            app:layout_constraintHeight_percent="0.10"
+            android:gravity="center"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:text="next Question"
+            android:layout_marginTop="@dimen/_7sdp"
+            android:layout_marginBottom="@dimen/_2sdp"
+            android:textSize="24sp"
+            app:layout_constraintTop_toBottomOf="@+id/card3"
+            android:textColor="#FFFf"
+            android:fontFamily="@font/cairo_semibold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintBottom_toTopOf="@id/progeressloadingregister"
+
+            />
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/animationView"
+        android:layout_width="@dimen/_60sdp"
+        android:layout_height="0dp"
+        app:lottie_rawRes="@raw/next"
+        app:lottie_autoPlay="true"
+        app:lottie_loop="true"
+       app:layout_constraintEnd_toEndOf="@+id/button_conferm_to_solve_next_question"
+       app:layout_constraintTop_toTopOf="@+id/button_conferm_to_solve_next_question"
+        app:layout_constraintBottom_toBottomOf="@+id/button_conferm_to_solve_next_question"
+        />
+    <ProgressBar
+        android:id="@+id/progeressloadingregister"
+       android:layout_marginBottom="@dimen/_5sdp"
+        android:layout_width="@dimen/_50sdp"
+        android:layout_height="@dimen/_30sdp"
+        android:layout_gravity="center"
+        android:background="@drawable/background"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>
